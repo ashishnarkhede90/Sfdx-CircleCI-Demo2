@@ -1,0 +1,41 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "Global Media",
+            "BillingStreet": "150 Chestnut Street",
+            "BillingCity": "Toronto",
+            "BillingState": "Ontario",
+            "BillingPostalCode": "L4B 1Y3",
+            "Phone": "(905) 555-1212"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Acme",
+            "BillingStreet": "10 Main Rd.",
+            "BillingCity": "New York",
+            "BillingState": "NY",
+            "BillingPostalCode": "31349",
+            "Phone": "(212) 555-5555"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "salesforce.com",
+            "BillingStreet": "The Landmark @ One Market, Suite 300",
+            "BillingCity": "San Francisco",
+            "BillingState": "CA",
+            "BillingPostalCode": "94105",
+            "Phone": "(415) 901-7000",
+            "Website": "http://www.salesforce.com"
+        }
+    ]
+}
