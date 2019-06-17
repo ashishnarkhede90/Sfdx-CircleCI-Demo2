@@ -12,7 +12,7 @@ fi
 
 
 
-PACKAGE_VERSION="$($SFDX_CLI_EXEC force:package:version:create -p DemoPackage -x -w 10 --json)"
+PACKAGE_VERSION="$($SFDX_CLI_EXEC force:package:version:create -p DemoPackage1 -x -w 10 --json)"
 RESULT="$(echo $PACKAGE_VERSION | jq '.status')"
 echo "Result is $RESULT"
 
