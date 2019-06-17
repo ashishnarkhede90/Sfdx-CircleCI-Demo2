@@ -1,7 +1,8 @@
 public with sharing class AccountSearchController {
     @AuraEnabled
-    public static List<Account> searchAccounts( String searchTerm ) {
-        List<Account> accounts = new List<Account>();
+    public static List<Account> searchAccounts( String searchTerm ) {       
+	List<Account> accounts = new List<Account>();
+	try{
         if ( String.isNotBlank( searchTerm ) ) {
             List<List<SObject>> searchResults = [
                 FIND :searchTerm
@@ -15,6 +16,10 @@ public with sharing class AccountSearchController {
             ];
             accounts = searchResults[0];
         }
+	}
+	catch(Exception  ex){
+	  System.debug('Exception occurred: ' + ex);
+	}
         return accounts;
     }
 }
